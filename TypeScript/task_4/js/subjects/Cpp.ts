@@ -1,8 +1,7 @@
-import { Subjects } from './Teacher';
-import { Subjects as SubjectClass } from './Subject';
+/// <reference path="Teacher.ts" />
+/// <reference path="Subject.ts" />
 
-export namespace Subjects {
-  // Declaration merging - adding experienceTeachingC to Teacher interface
+namespace Subjects {
   export interface Teacher {
     experienceTeachingC?: number;
   }
